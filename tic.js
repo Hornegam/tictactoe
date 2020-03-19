@@ -106,19 +106,41 @@ function verifica(x,y){
         return false
     }
 }
+function e5(div,forma){
+    var fora = document.getElementById(div)
+    fora.innerHTML = forma
+}
 
-function coloca(x,y,forma){
+function colocaX(x,y,forma){
     if(verifica(x,y)){
+        var x = String(ultPosicaoX.x)
+        var y = String(ultPosicaoX.y)
+        var fim = x.concat(y)
+        console.log(fim)
+        e5(fim,forma)
         tabuleiro[x][y] = forma
     }
 }
+
+function colocaY(x,y,forma){
+    if(verifica(x,y)){
+        var x = String(ultPosicaoY.x)
+        var y = String(ultPosicaoY.y)
+        var fim = x.concat(y)
+        console.log(fim)
+        e5(fim,forma)
+        tabuleiro[x][y] = forma
+    }
+}
+
 
 $('#xx').click(function() {
     var  fora =$(this).attr("value")
     //console.log($(this).attr("value"));
     console.table(tabuleiro)
-    coloca(ultPosicaoX.x,ultPosicaoX.y,fora)
+    colocaX(ultPosicaoX.x,ultPosicaoX.y,fora)
     console.table(tabuleiro)
+
 
 });
 
@@ -126,7 +148,7 @@ $('#yy').click(function() {
     var  fora =$(this).attr("value")
     //console.log($(this).attr("value"));
     console.table(tabuleiro)
-    coloca(ultPosicaoY.x,ultPosicaoY.y,fora)
+    colocaY(ultPosicaoY.x,ultPosicaoY.y,fora)
     console.table(tabuleiro)
 
 });

@@ -12,12 +12,29 @@
 </head>
 <body>
     <div>
+        <div style="display: inline-block">
+            <div id="00" style="border-width: 1px; border-color: black; border-style: solid; padding-right: 50px; padding-bottom: 50px"></div>
+            <div id="01" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+            <div id="02" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+        </div> 
+        <div>
+            <div id="10" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+            <div id="11" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+            <div id="12" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+        </div>
+        <div>
+            <div id="20" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+            <div id="21" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+            <div id="22" style="border-width: 1px; border-color: black; border-style: solid; padding-bottom: 50px;"></div>
+        </div>
+    </div>
+    <div>
         X
         <button onclick="esquerdaX()">Esquerda</button>
         <button onclick="direitaX()">Direita</button>
         <button onclick="cimaX()">Cima</button>
         <button onclick="baixoX()">Baixo</button>
-        <button id="xx" value="1">Coloca</button>
+        <button id="xx" value="X">Coloca</button>
     </div>
     <div style="margin-top: 2vh;">
         O
@@ -25,8 +42,14 @@
         <button onclick="direitaO()">Direita</button>
         <button onclick="cimaO()">Cima</button>
         <button onclick="baixoO()">Baixo</button>
-        <button id="yy" value="2">Coloca</button>
+        <button id="yy" value="O">Coloca</button>
     </div>
+    <script>
+        var teste = document.getElementById("00")
+        
+
+        
+    </script>
     <script src="tic.js"></script>
 </body>
 </html>
